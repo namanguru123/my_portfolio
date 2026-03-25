@@ -1,0 +1,159 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 5rem; /* Space for navbar */
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.gradient-sphere {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.4;
+}
+
+.blue-sphere {
+  width: 50vw;
+  height: 50vw;
+  max-width: 600px;
+  max-height: 600px;
+  background: var(--accent-blue);
+  top: -10%;
+  right: -5%;
+  animation: galaxyOrbit1 40s infinite ease-in-out;
+}
+
+.violet-sphere {
+  width: 40vw;
+  height: 40vw;
+  max-width: 500px;
+  max-height: 500px;
+  background: var(--accent-violet);
+  bottom: 0;
+  left: -5%;
+  animation: galaxyOrbit2 35s infinite ease-in-out;
+}
+
+@keyframes galaxyOrbit1 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-15vw, 15vh);
+  }
+  50% {
+    transform: translate(-30vw, 5vh);
+  }
+  75% {
+    transform: translate(-15vw, -10vh);
+  }
+}
+
+@keyframes galaxyOrbit2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(15vw, -15vh);
+  }
+  50% {
+    transform: translate(25vw, -30vh);
+  }
+  75% {
+    transform: translate(10vw, -15vh);
+  }
+}
+
+.particle-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent-blue);
+  margin-bottom: 2rem;
+}
+
+.badge-icon {
+  opacity: 0.8;
+}
+
+.hero-headline {
+  font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtext {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-large {
+  padding: 0.875rem 2rem;
+  font-size: 1.05rem;
+  gap: 0.5rem;
+}
+
+.cta-primary {
+  box-shadow: 0 0 20px rgba(62, 139, 255, 0.2);
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-subtext {
+    text-align: center;
+  }
+}
