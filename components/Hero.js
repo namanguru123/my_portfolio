@@ -75,7 +75,7 @@ export default function Hero() {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(139, 92, 246, ${p.alpha})`;
+        ctx.fillStyle = `rgba(0, 0, 0, ${p.alpha})`;
         ctx.fill();
       });
 
@@ -134,7 +134,7 @@ export default function Hero() {
             <motion.a 
               href="#projects" 
               className="btn btn-primary btn-large cta-primary"
-              whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(62, 139, 255, 0.4)" }}
+              whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(234, 88, 12, 0.4)" }}
               whileTap={{ scale: 0.95 }}
             >
               View Projects
@@ -143,7 +143,7 @@ export default function Hero() {
             <motion.a 
               href="/resume.pdf" download="Naman_Sharma_Resume.pdf"
               className="btn btn-secondary btn-large"
-              whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
+              whileHover={{ scale: 1.05, backgroundColor: "rgba(0,0,0,0.05)" }}
               whileTap={{ scale: 0.95 }}
             >
               <Download size={18} style={{marginRight: '0.5rem'}} />
@@ -152,7 +152,7 @@ export default function Hero() {
             <motion.a 
               href="#contact" 
               className="btn btn-secondary btn-large"
-              whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
+              whileHover={{ scale: 1.05, backgroundColor: "rgba(0,0,0,0.05)" }}
               whileTap={{ scale: 0.95 }}
             >
               Contact Me

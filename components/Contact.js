@@ -34,7 +34,7 @@ export default function Contact() {
               <span className="contact-icon-wrapper"><Mail size={24} /></span>
               <div className="contact-link-text">
                 <span className="contact-link-label">Email</span>
-                <span className="contact-link-value group-hover:text-[var(--foreground)] transition-colors">namansharma.work.ingmail.com</span>
+                <span className="contact-link-value group-hover:text-[var(--foreground)] transition-colors">namansharma.work.in@gmail.com</span>
               </div>
             </a>
 

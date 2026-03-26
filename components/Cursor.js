@@ -59,8 +59,8 @@ export default function Cursor() {
           x: mousePosition.x - 16,
           y: mousePosition.y - 16,
           scale: isHovering ? 1.5 : 1,
-          borderColor: isHovering ? "rgba(139, 92, 246, 0.8)" : "rgba(62, 139, 255, 0.5)",
-          backgroundColor: isHovering ? "rgba(139, 92, 246, 0.1)" : "transparent",
+          borderColor: isHovering ? "rgba(245, 158, 11, 0.8)" : "rgba(234, 88, 12, 0.5)",
+          backgroundColor: isHovering ? "rgba(245, 158, 11, 0.1)" : "rgba(245, 158, 11, 0)",
           opacity: mousePosition.x === -100 ? 0 : 1
         }}
         transition={{ type: "tween", ease: "easeOut", duration: 0.2 }}

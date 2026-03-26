@@ -6,6 +6,7 @@
   z-index: 100;
   padding: 1.5rem 0;
   transition: all 0.3s ease;
+  background-color: #FFFFFF;
 }
 
 .navbar-scrolled {
@@ -52,7 +53,6 @@
 
 .mobile-toggle {
   display: block;
-  background: transparent;
   border: none;
   color: var(--foreground);
   cursor: pointer;
@@ -84,9 +84,11 @@
   .desktop-nav {
     display: flex;
   }
+
   .mobile-toggle {
     display: none;
   }
+
   .mobile-menu {
     display: none !important;
   }
