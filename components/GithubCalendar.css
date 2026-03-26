@@ -1,0 +1,37 @@
+.github-calendar-wrapper {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.03) 100%), var(--glass-bg);
+}
+
+.github-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.calendar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.calendar-container > div {
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .github-calendar-wrapper {
+    padding: 1.5rem;
+  }
+  .github-title {
+    font-size: 1.5rem;
+  }
+}

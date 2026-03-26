@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import GithubContributionCalendar from "./GithubCalendar";
 import "./About.css";
 
 const aboutParagraphs = [
@@ -59,6 +60,9 @@ export default function About() {
             </div>
           </div>
         </motion.div>
+
+        {/* GitHub Contribution Graph */}
+        <GithubContributionCalendar />
       </div>
     </section>
   );
