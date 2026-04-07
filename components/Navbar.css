@@ -6,7 +6,7 @@
   z-index: 100;
   padding: 1.5rem 0;
   transition: all 0.3s ease;
-
+  background-color: #FFFFFF;
 
 }
 
@@ -84,9 +84,14 @@
 }
 
 @media (min-width: 768px) {
+  .navbar{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-bottom: none;
+  }
   .desktop-nav {
     display: flex;
-    background-color: #FFFFFF;
+
   }
 
   .mobile-toggle {
